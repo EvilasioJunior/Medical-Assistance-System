@@ -1,0 +1,13 @@
+<list>
+ 
+<webservice.Webservice>
+  <targetName>http://jr.com/</targetName>
+  <Name>AnalyzerWindowsService</Name>
+  <url>http://localhost:8080/MedicalAssistanceWebService/AnalyzerWindows?wsdl</url>
+  <Port>AnalyzerWindowsPort</Port>
+  <arguments>
+      <string>ValuesAnalysis.xml</string>
+  </arguments>
+</webservice.Webservice>
+
+</list>

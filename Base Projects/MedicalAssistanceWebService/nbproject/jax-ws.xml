@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="DrugService">
+      <implementation-class>com.jr.DrugService</implementation-class>
+    </service>
+    <service name="AnalysisService">
+      <implementation-class>com.jr.AnalysisService</implementation-class>
+    </service>
+    <service name="AlarmService">
+      <implementation-class>com.jr.AlarmService</implementation-class>
+    </service>
+    <service name="AnalyzerLinux">
+      <implementation-class>com.jr.AnalyzerLinux</implementation-class>
+    </service>
+    <service name="AnalyzerWindows">
+      <implementation-class>com.jr.AnalyzerWindows</implementation-class>
+    </service>
+    <service name="OldMonitor">
+      <implementation-class>com.jr.OldMonitor</implementation-class>
+    </service>
+    <service name="Monitor">
+      <implementation-class>com.jr.Monitor</implementation-class>
+    </service>
+    <service name="OldPlanner">
+      <implementation-class>com.jr.OldPlanner</implementation-class>
+    </service>
+    <service name="Planner">
+      <implementation-class>com.jr.Planner</implementation-class>
+    </service>
+    <service name="AlarmService2">
+      <implementation-class>com.jr.ws.AlarmService2</implementation-class>
+    </service>
+    <service name="AlarmService3">
+      <implementation-class>com.jr.ws2.AlarmService3</implementation-class>
+    </service>
+  </services>
+  <clients/>
+  <jsr109>false</jsr109>
+</jax-ws>

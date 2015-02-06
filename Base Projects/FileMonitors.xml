@@ -1,0 +1,13 @@
+
+<list>
+<webservice.Webservice>
+  <targetName>http://jr.com/</targetName>
+  <Name>MonitorService</Name>
+  <url>http://localhost:8080/MedicalAssistanceWebService/Monitor?wsdl</url>
+  <Port>MonitorPort</Port>
+  <arguments>
+      <string>ValuesMonitor.xml</string>
+  </arguments>
+</webservice.Webservice>
+
+</list>

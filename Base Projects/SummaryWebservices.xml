@@ -1,0 +1,35 @@
+<list>
+  <webservice.Webservice>
+    <id>1</id>
+    <Description>Alarm One</Description>
+    <targetName>http://jr.com/</targetName>
+    <Name>AlarmServiceService</Name>
+    <url>http://localhost:8080/MeuWebService/AlarmService?wsdl</url>
+    <Port>AlarmServicePort</Port>
+    <arguments>
+      <string></string>
+    </arguments>
+  </webservice.Webservice>
+  <webservice.Webservice>
+    <id>2</id>
+    <Description>Alarm Two</Description>
+    <targetName>http://ws.jr.com/</targetName>
+    <Name>AlarmService2Service</Name>
+    <url>http://localhost:8080/MeuWebService/AlarmService2?wsdl</url>
+    <Port>AlarmService2Port</Port>
+    <arguments>
+      <string></string>
+    </arguments>
+  </webservice.Webservice>
+  <webservice.Webservice>
+    <id>3</id>
+    <Description>Alarm Three</Description>
+    <targetName>http://ws2.jr.com/</targetName>
+    <Name>AlarmService3Service</Name>
+    <url>http://localhost:8080/MeuWebService/AlarmService3?wsdl</url>
+    <Port>AlarmService3Port</Port>
+    <arguments>
+      <string></string>
+    </arguments>
+  </webservice.Webservice>
+</list>

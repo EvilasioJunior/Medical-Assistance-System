@@ -1,0 +1,11 @@
+
+<list>
+<webservice.Webservice>
+  <targetName>http://jr.com/</targetName>
+  <Name>PlannerService</Name>
+  <url>http://localhost:8080/MedicalAssistanceWebService/Planner?wsdl</url>
+  <Port>PlannerPort</Port>
+  <arguments/>
+</webservice.Webservice>
+
+</list>

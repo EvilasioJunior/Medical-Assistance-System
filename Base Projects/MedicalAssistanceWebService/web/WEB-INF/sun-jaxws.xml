@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="com.jr.DrugService" name="DrugService" url-pattern="/DrugService"/>
+  <endpoint implementation="com.jr.AnalysisService" name="AnalysisService" url-pattern="/AnalysisService"/>
+  <endpoint implementation="com.jr.AlarmService" name="AlarmService" url-pattern="/AlarmService"/>
+  <endpoint implementation="com.jr.AnalyzerLinux" name="AnalyzerLinux" url-pattern="/AnalyzerLinux"/>
+  <endpoint implementation="com.jr.AnalyzerWindows" name="AnalyzerWindows" url-pattern="/AnalyzerWindows"/>
+  <endpoint implementation="com.jr.OldMonitor" name="OldMonitor" url-pattern="/OldMonitor"/>
+  <endpoint implementation="com.jr.Monitor" name="Monitor" url-pattern="/Monitor"/>
+  <endpoint implementation="com.jr.OldPlanner" name="OldPlanner" url-pattern="/OldPlanner"/>
+  <endpoint implementation="com.jr.Planner" name="Planner" url-pattern="/Planner"/>
+  <endpoint implementation="com.jr.ws.AlarmService2" name="AlarmService2" url-pattern="/AlarmService2"/>
+  <endpoint implementation="com.jr.ws2.AlarmService3" name="AlarmService3" url-pattern="/AlarmService3"/>
+</endpoints>
