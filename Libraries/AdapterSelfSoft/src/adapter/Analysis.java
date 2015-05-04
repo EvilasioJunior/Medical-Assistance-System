@@ -28,7 +28,7 @@ public abstract class Analysis{
     private Monitoring monitorObserved;
     
     private Boolean alertSonorous = false;
-    private ArrayList designers = new ArrayList();
+    private ArrayList planners = new ArrayList();
     
     //gets
     public File getValueAnalysis(){
@@ -88,15 +88,15 @@ public abstract class Analysis{
     }
 
     public void addDesigner(Planning a) {
-            designers.add(a);
+            planners.add(a);
     }
 
     public void removeDesigner(Planning a) {
-            designers.remove(a);
+            planners.remove(a);
     }
 
     private void notifyPlans(){
-            Iterator i = designers.iterator();
+            Iterator i = planners.iterator();
             while(i.hasNext()){
                     Planning a = (Planning) i.next();
                     a.update(this);

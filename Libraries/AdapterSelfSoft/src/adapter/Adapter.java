@@ -18,7 +18,8 @@ public class Adapter {
     
     private List<Monitoring> monitors;
     private List<Analysis> analyzers;
-    private List<Planning> designers;
+    private List<Planning> planners;
+    private List<Execution> executors;
     
     //Funtions of each system
     private Boolean proceed;
@@ -31,7 +32,14 @@ public class Adapter {
     public Adapter(List<Monitoring> monitors, List<Analysis> analyzers, List<Planning> designers){
         this.monitors = monitors;
         this.analyzers = analyzers;
-        this.designers = designers;
+        this.planners = designers;
+    }
+    
+    public Adapter(List<Monitoring> monitors, List<Analysis> analyzers, List<Planning> planners, List<Execution> executors){
+        this.monitors = monitors;
+        this.analyzers = analyzers;
+        this.planners = planners;
+        this.executors = executors;
     }
     
     //gets
@@ -44,7 +52,11 @@ public class Adapter {
     }
         
     public List<Planning> getlistPlanning(){
-        return this.designers;
+        return this.planners;
+    }
+    
+    public List<Execution> getlistExecution(){
+        return this.executors;
     }
     
     //sets    
@@ -56,8 +68,12 @@ public class Adapter {
          this.analyzers = analyzers;
     }
         
-    public void setlistPlanning(List<Planning> designers){
-         this.designers = designers;
+    public void setlistPlanning(List<Planning> planners){
+         this.planners = planners;
+    }
+    
+    public void setlistExecution(List<Planning> executors){
+         this.planners = executors;
     }
         
     public void setObserverListAnalysis(List<Monitoring> lm){
@@ -67,7 +83,12 @@ public class Adapter {
     
     public void setObserverListPlanning(List<Analysis> la){
         for(int i=0; i < la.size(); i++)
-            this.designers.get(i).setObserver(la.get(i));   
+            this.planners.get(i).setObserver(la.get(i));   
+    }
+    
+    public void setObserverListExecution(List<Planning> lp){
+        for(int i=0; i < lp.size(); i++)
+            this.executors.get(i).setObserver(lp.get(i));   
     }
     
     public void setStop(Boolean stop){
